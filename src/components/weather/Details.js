@@ -4,29 +4,29 @@ function Details() {
   return (
     <>
     <div>Details
-    <section class="main">
+    <section className="main">
     <p id="chooseLocation" style={{textAlign:'center'}} > Choose a location to view the weather.</p>
     <div className="styleTop">
         <article />
         <article className="top-section">
             current weather
              <span id="weather-image-container"></span>
-            <h2 id = "h2inputText"></h2> 
-                <!--search name -->
+            <h2 id = "h2inputText">H2 h2inputText</h2> 
+               <p> !--search name --</p> 
             <p id = "Area"></p>  
-                <!-- Area-->
+            {/* <p>  <!-- Area--></p>  */}
             <p id = "Region"></p> 
-                <!--Region-->
+            {/* <p> <!--Region--></p>  */}
             <p id = "Country"></p> 
-                <!-- Country-->
+            {/* <p> <!-- Country--></p>  */}
             <p id = "CurrentTemp"></p> 
-                <!--Currently feel like-->        
+            {/* <p>   <!--Currently feel like-->        </p>  */}
             <p id = "Sunshine"></p> 
-                <!--Chance of Sunshine-->
+            {/* <p>   <!--Chance of Sunshine--></p>  */}
             <p id = "Rain"></p> 
-                <!--Chance of Rain -->
+            {/* <p>  <!--Chance of Rain --></p>  */}
             <p id = "Snow"></p> 
-                <!--Chance of Snow-->
+            {/* <p> <!--Chance of Snow--></p>  */}
          </article>
     </div>
     </section>

@@ -1,77 +1,62 @@
 import './App.css';
-// import Footer from '../public/components/Footer';
-// import PreviousSearches from '../public/components/PreviousSearches';
-// import UpcomingWeather from '../public/components/UpcomingWeather';
+import WeatherSearch from './components/weather/WeatherSearch';
+import Footer from './components/common/Footer';
+import Details from './components/weather/Details';
+import ConversionWidget from './components/weather/ConversionWidget';
+import Nav from './components/common/Nav';
 
-
+import { useState } from 'react';
+// import UpcomingWeather from './components/weather/UpcomingWeather';
+// import PreviousSearches from './components/weather/PreviousSearches';
+//import { Routes, Route } from 'react-router-dom'
 
 
 
 function App() {
 
-//The fetch() function returns a promise.
+  const [show, setShow] = useState(false)
 
-
-
-// fetch(`https://wttr.in/${event.target.location.value}?format=j1`)
-
-
-
-  // fetch(`https://wttr.in/Detroit?format=j1`)
-  //   .then((response) => response.json())
-  //   .then((json) => {
-  //   // You can do what you like with the result here.
-  //   console.log(json);
-  // })
-  // .catch((error) => {
-  //   // You can do what you like with the error here.
-  //   console.log(error);
-  // });
-
-
-
-
-  
 
   return (
-    <div className="App">
-      {/* do i need header component? */}
-      <header className="App-header"> 
-        <h1>This is the App Component</h1>
 
-        <h1>Weather Application</h1>
-        <form>
-            <label htmlFor="location">Pick a Location</label>
-            <input type="submit" defaultValue="Get Weather"/>
-        </form>
-    </header>
+    <div className="App">
+      <Nav />
+      <> 
+        <h3>Weather Application `(App.js)`</h3>
+    </>
 <aside className = "aside">
+  <WeatherSearch />
 
 </aside>
 
-    <main className="main">
-        <article>
-        Choose a location to view the weather.
-        </article>
-        <aside>
-          <p>Aside in Main after Article</p>
-            <article>article</article>
-            <article>article</article>
-            <article>article</article>
-        </aside>
-        </main>
-        <aside className="previous-searches">
-            <section>
-                <h4>Previous Searches</h4>
-                <ul></ul>
-            </section>
-        </aside>        
-      
-{/* 
-<Footer /> */}
+<Details />
+
+  <p>Do you need to convert a temperature?</p>   
+  <div className="convertTemperature">
+    <button
+    onClick={() => setShow
+    (!show)}>
+      {show ? "Hide" : "Show Temperature Converter"}
+    </button>
+    {show && <ConversionWidget />}
+  </div>
+
+
+<Footer /> 
 
     </div>
   );
 }
 
 export default App;
+
+//Since previous searches are going to go into weather search, I am taking it out of here.
+
+   
+// <aside className="previous-searches">
+// <section>
+//     <h4>Previous Searches</h4>
+//     <ul></ul>
+// </section>
+// </aside>        
+
