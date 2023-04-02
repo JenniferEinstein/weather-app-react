@@ -14,11 +14,6 @@ function PreviousSearches() {
                 </ul>
             </section>
         </aside>
-
-
-
-
-
     </div>
   )
 }

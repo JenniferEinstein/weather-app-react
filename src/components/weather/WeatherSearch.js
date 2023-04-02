@@ -76,8 +76,6 @@ const handleSubmit = event => {
         <UpcomingWeather />
         </main>
         </div>
-{/* 
-<Footer /> */}
 
     </div>
   );

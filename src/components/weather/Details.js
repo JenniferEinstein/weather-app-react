@@ -3,8 +3,8 @@ import React from 'react'
 function Details() {
   return (
     <>
-    <div>Details
-    <section className="main">
+    <div className='details'>Details
+
     <p id="chooseLocation" style={{textAlign:'center'}} > Choose a location to view the weather.</p>
     <div className="styleTop">
         <article />
@@ -29,11 +29,8 @@ function Details() {
             {/* <p> <!--Chance of Snow--></p>  */}
          </article>
     </div>
-    </section>
+
     </div>
-
-
-
     </>
   )
 }

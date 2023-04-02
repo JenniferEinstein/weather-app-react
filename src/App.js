@@ -4,11 +4,14 @@ import Footer from './components/common/Footer';
 import Details from './components/weather/Details';
 import ConversionWidget from './components/weather/ConversionWidget';
 import Nav from './components/common/Nav';
+import { Routes, Route } from 'react-router-dom'
+import Home from "./components/landing/Home"
+import About from "./components/common/About"
 
 import { useState } from 'react';
 // import UpcomingWeather from './components/weather/UpcomingWeather';
 // import PreviousSearches from './components/weather/PreviousSearches';
-//import { Routes, Route } from 'react-router-dom'
+
 
 
 
@@ -21,6 +24,13 @@ function App() {
 
     <div className="App">
       <Nav />
+      <div className='container'>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/about" element={<About />} />
+        </Routes>
+{/* should routes be here or in Nav? */}
+
       <> 
         <h3>Weather Application `(App.js)`</h3>
     </>
@@ -41,7 +51,7 @@ function App() {
     {show && <ConversionWidget />}
   </div>
 
-
+  </div>
 <Footer /> 
 
     </div>
