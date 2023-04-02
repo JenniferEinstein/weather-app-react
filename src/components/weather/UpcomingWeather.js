@@ -14,18 +14,18 @@ function UpcomingWeather(){
     <div className="threeInOne">
       <article id="today">
         <b>Today article</b>
-        <ul />
+        {/* <ul /> */}
       </article>
     </div>
     <div className="threeInOne">
       <article id="tomorrow">
         <b>Tomorrow article</b>
-        <ul />
+        {/* <ul /> */}
       </article>
     </div>
     <div className="threeInOne"> 
       <article id="asatte">
-        <ul />
+        {/* <ul /> */}
         <b>Day After Tomorrow article</b>
       </article>
     </div>

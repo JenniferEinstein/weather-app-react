@@ -5,7 +5,7 @@ function PreviousSearches() {
     <div className='previous-searches'>
        
 
-<aside class="previous">
+<aside className="previous">
     {/* <!-- Ths aside will contain weather history --> */}
         <section>
             <h4>Previous Searches</h4>

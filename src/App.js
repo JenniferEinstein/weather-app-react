@@ -24,16 +24,14 @@ function App() {
 
     <div className="App">
       <Nav />
-      <div className='container'>
+      <div className='container-routes'>
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />} />
         </Routes>
 {/* should routes be here or in Nav? */}
 
-      <> 
-        <h3>Weather Application `(App.js)`</h3>
-    </>
+ 
 <aside className = "aside">
   <WeatherSearch />
 
