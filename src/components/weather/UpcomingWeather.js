@@ -1,3 +1,5 @@
+//It looks like this will also be part of weather search and not its own Component.
+
 import React from "react";
 
 function UpcomingWeather(){

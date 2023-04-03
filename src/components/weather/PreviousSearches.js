@@ -19,3 +19,22 @@ function PreviousSearches() {
 }
 
 export default PreviousSearches
+
+// function previousLocation (locationName, weather) {
+//     const ul = document.querySelector("ul");
+//     const li = document.querySelector("li");
+//     if(document.getElementById(`previous_searches`))document.getElementById(`previous_searches`).remove();
+//         li.innerHTML=`<a href="#">${location}</a>d`
+// }
+
+// <ul id="previous_searches"></ul>
+// function previousLocation(locationName, weather) {
+//     const ul = document.querySelector("#previous_searches");
+//     const li = document.createElement("li");
+//     li.innerHTML = `<a href="#">${locationName}</a>`;
+//     li.addEventListener("click", () => {
+//       getWeatherData(locationName);
+//     });
+//     ul.prepend(li);
+//   }
+  

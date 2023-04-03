@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: dodgerblue;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -33,7 +34,7 @@
 }
 
 .main {
-  background-color: lightgray;
+  background-color: lightblue;
 }
 .weather-search {
   display: flex;
@@ -49,7 +50,7 @@
 
 .wrapper {
   padding: 5px 20px;
-  background-color: teal;
+  background-color: lightskyblue;
 }
 
 .wrapper fieldset {
