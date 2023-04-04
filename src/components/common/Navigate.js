@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import "./Nav2.css";
+import "./Navigate.css";
 
 
-function Nav2() {
+function Navigate() {
     return (
     <nav>
       <header>
@@ -10,7 +10,7 @@ function Nav2() {
         <article>
           <h1>
             <NavLink to="/">
-              This is Nav2 NavLink to "/"
+              This is Navigate NavLink to "/"
               </NavLink>
           </h1>
         </article>
@@ -30,5 +30,5 @@ function Nav2() {
     );
   }
   
-  export default Nav2;
+  export default Navigate;
   

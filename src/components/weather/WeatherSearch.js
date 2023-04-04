@@ -9,9 +9,9 @@ function WeatherSearch() {
   // const [previousSearches, setPreviousSearches] = useState([]);
   const [searchHistory, setSearchHistory] = useState([]);
 
-  const handleClear = () => {
-    setSearchHistory([]);
-  }
+  // const handleClear = () => {
+  //   setSearchHistory([]);
+  // }
 
   const handleSubmit = (event) => {
     if (location.trim() !==""){
@@ -70,7 +70,7 @@ function WeatherSearch() {
               </label>
             </fieldset>
             <button type='submit' disabled={location}>Get Weather</button>
-            <button onClick={handleClear}>Clear</button>
+            {/* <button onClick={handleClear}>Clear</button> */}
           </form>
 
         </div>
