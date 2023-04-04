@@ -16,8 +16,8 @@ ul {
 }
 
 .nav {
-    background-color: coral;
-    color: black;
+    background-color: dodgerblue;
+    color: whitesmoke;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -49,9 +49,9 @@ ul {
 }
 
 .nav li:hover {
-    background-color: lightsalmon ;
+    background-color: navy ;
 }
 
 nav li.active {
-    background-color: coral;
+    background-color: dodgerblue;
 }
