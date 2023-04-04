@@ -14,27 +14,25 @@ function Nav() {
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({ path: resolvedPath.pathname, end: true})
       return (
+        <ul>
     <li className={isActive ? "active" : ""}>
       <Link to={to} {...props}>
         {children}
       </Link>
     </li>
+    </ul>
       )}
   
   return (
      <>
-    <p>wow. This is the nav.</p>
-  <nav className="nav">
-  <Link to="/" className="site-title">
-        What's the Weather?
-     </Link>
+   <nav className="nav">
+    <Link to="/" className="site-title">
+      What's the Weather?
+    </Link>
      <ul>
       <li>
         <CustomLink to="/about">About</CustomLink>
       </li>
-      {/* <li>
-        <CustomLink to="/tbd">TBD</CustomLink>
-      </li> */}
      </ul>
 
      

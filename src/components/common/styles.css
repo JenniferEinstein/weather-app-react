@@ -11,6 +11,10 @@ body {
     text-align: center;
 }
 
+ul {
+  list-style: none outside none;  
+}
+
 .nav {
     background-color: coral;
     color: black;

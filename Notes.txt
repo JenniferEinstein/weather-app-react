@@ -4,3 +4,5 @@ remote origin already exists.
 origin	https://github.com/JenniferEinstein/weather-app-mod3.git (fetch)
 origin	https://github.com/JenniferEinstein/weather-app-mod3.git (push)
 
+4/3/22
+In APP, I am importing WeatherSearch, Footer, ConversionWidget, Nav, and SearchHistory. But maybe I should have all of those on the Landing Page (HOME). That should get rid of the problem with About.
