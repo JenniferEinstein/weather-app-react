@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: dodgerblue;
+  background-color: lightskyblue;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -30,7 +30,7 @@
   width: 400px;
   padding: 16px;
   border: 1px solid white;
-  background-color: royalblue;
+  background-color: dodgerblue;
 }
 
 .main {
@@ -44,7 +44,7 @@
   max-width: 100%;
   padding: 36px;
   border: 5px solid white;
-  background-color: lavender;
+  background-color: lightskyblue;
 }
 
 

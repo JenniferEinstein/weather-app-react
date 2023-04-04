@@ -1,6 +1,9 @@
 import React from 'react'
 import './styles.css'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom'
+import Home from '../landing/Home';
+import About from './About';
 
 
 
@@ -13,6 +16,8 @@ function Nav() {
   function CustomLink({ to, children, ...props }) {
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({ path: resolvedPath.pathname, end: true})
+
+    
       return (
         <ul>
     <li className={isActive ? "active" : ""}>
@@ -34,8 +39,10 @@ function Nav() {
         <CustomLink to="/about">About</CustomLink>
       </li>
      </ul>
-
-     
+     <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/about" element={<About />} />
+    </Routes>
   </nav>
 </>
   )
@@ -44,6 +51,3 @@ function Nav() {
 export default Nav  
 
 
-    //  {/* <routes>
-    //   <route element>
-    //  </routes> */}

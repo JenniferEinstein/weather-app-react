@@ -112,8 +112,11 @@ function WeatherSearch() {
           )}
       
     <aside className = "aside">
+    <section className = "search-history">
       <SearchHistory location={location} weather={weather} />
+      </section>
     </aside>
+
 
     <main className="main">
         <article>
